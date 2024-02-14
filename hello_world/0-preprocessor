@@ -1,2 +1,2 @@
 #!/bin/bash
-asd
+gcc -E -o c CFILE 
