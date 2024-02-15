@@ -13,5 +13,6 @@ int main(void)
 char abcdario;
 for (abcdario = 'a'; abcdario <= 'z'; abcdario++)
 putchar(abcdario);
- return (0);
+putchar('\n');
+return (0);
 }
