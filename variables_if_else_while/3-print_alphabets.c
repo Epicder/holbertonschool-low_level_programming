@@ -1,4 +1,4 @@
-ZZZZinclude <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
@@ -10,9 +10,11 @@ ZZZZinclude <stdio.h>
 
 int main(void)
 {
-char abcdario;
-for (abcdario = 'a'; abcdario <= 'z'; abcdario++)
-putchar(abcdario);
+char letra;
+for (letra = 'a'; letra <= 'z'; letra++)
+putchar(letra);
+for (letra = 'A'; letra <= 'Z'; letra++)
+putchar(letra);
 putchar('\n');
 return (0);
 }
