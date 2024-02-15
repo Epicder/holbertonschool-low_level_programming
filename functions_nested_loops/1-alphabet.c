@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * main - check the code
  *
@@ -14,4 +13,3 @@ _putchar(n);
 }
 _putchar('\n');
 }
-  
