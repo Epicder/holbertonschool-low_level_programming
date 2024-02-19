@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - check the code.
+ * _isalpha - check the code.
  * @c: verifica si la itegral se encuentra en el abcdario xdd
  * Return: Always 0.
  */
