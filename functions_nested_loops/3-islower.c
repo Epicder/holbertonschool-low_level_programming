@@ -2,7 +2,7 @@
 
 /**
  * _islower - check the code.
- *
+ * @c: el caracter q verifica
  * Return: Always 0.
  */
 
