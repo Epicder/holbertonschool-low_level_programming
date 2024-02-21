@@ -1,5 +1,5 @@
 #include "main.h"
-#include <string.h>
+#include <stdio.h>
 /**
  * _strlen - check the code 
  * @s: variable
@@ -7,7 +7,10 @@
  */
 int _strlen(char *s)
 {
-  int a;
-  a = strlen(s);
-return (a);
+int i;
+for(i = 0; *s != '\0'; s++)
+{
+i++;
+}
+return (i);
 }
