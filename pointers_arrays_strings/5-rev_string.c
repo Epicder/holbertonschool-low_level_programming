@@ -11,8 +11,13 @@ while (s[i] != '\0')
 {
 i++;
 }
+for (; *s != '\0'; s++)
+{
+_putchar(*s);
+}
 for (i -= 1; i >= 0; i--)
 {
 _putchar(s[i]);
 }
+ _putchar('\n');
 }
