@@ -6,7 +6,7 @@
  */
 void puts2(char *str)
 {
-  int b = 0; 
+  int b; 
   int a = 0;
   while (str[a] != '\0')
     {
@@ -14,9 +14,9 @@ void puts2(char *str)
     }
 for (b = 0; b < a; b += 2)
 {
-  if (str[a] != 1 && 3 && 5 && 7 && 9)
+  if (str[b] != 1 && 3 && 5 && 7 && 9)
     {
-     _putchar(str[a]);
+     _putchar(str[b]);
     }
  }  
 _putchar('\n');
