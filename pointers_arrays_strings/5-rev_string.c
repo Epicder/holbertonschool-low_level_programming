@@ -14,7 +14,8 @@ while (s[l] != '\0')
 {
 l++;
 }
-while (i < f) {
+while (i < f)
+{
 t = s[i];
 s[i] = s[f];
 s[f] = t;
