@@ -4,7 +4,7 @@
  * @s: string a ser revertida
  * Return: Always 0
  */
-void reverseString(char *s)
+void rev_string(char *s)
 {
 int l = 0;
 int i = 0;
