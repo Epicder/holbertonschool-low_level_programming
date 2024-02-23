@@ -15,7 +15,7 @@ int _atoi(char *s)
     }
   for (i = 0; i < a; i++)
     {
-num = (s[i] - 48);
+      num = (s[i] - 48);
 }
   if (num >= 0)
     {
