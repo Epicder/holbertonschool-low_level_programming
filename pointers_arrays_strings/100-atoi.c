@@ -9,7 +9,7 @@ int _atoi(char *s)
 int i = 0;
 int num = 0;
 int signo = 1;
-while (s[i] == '\0')
+while (s[i] == ' ')
 i++;
 if (s[i] == '-')
 {
