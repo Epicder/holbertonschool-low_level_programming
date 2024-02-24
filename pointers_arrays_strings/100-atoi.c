@@ -6,24 +6,24 @@
  */
 int _atoi(char *s)
 {
-  int i;
-  int a = 0;
-  int num;
-  while (s[a] != '\0')
-    {
-      a++;
-    }
-  for (i = 0; i < a; i++)
-    {
-      num = (s[i] - 48);
+int i = 0;
+int num = 0;
+int signo = 1;
+while (s[i] == '\0')
+i++;
+if (s[i] == '-')
+{
+signo = -1;
+i++;
 }
-  if (num >= 0)
-    {
-      return (num);
-    }
-  else if (num < 0)
-    {
-      return (-num);
-    }
-  return (0);
+else if (s[i] == '+')
+{
+i++;
+}
+while (s[i] >= '0' && s[i] <= '9')
+{
+num = num * 10 + (s[i] - '0');
+i++;
+}
+return (signo * num);
 }
