@@ -1,0 +1,28 @@
+#include "main.h"
+/**
+ * cap_string - inicia cada palabra con una mayuscula
+ * @str: string con las palabras
+ * Return: Always 0.
+ */
+char *cap_string(char *str)
+{
+  int i;
+  int inicio = 0;
+  
+  for (i = 0; str[i] != '\0'; i++)
+{
+  if (inicio && (str[i] >= 'a' && str[i] <= 'z'))
+        {
+            
+            str[i] -= 32; 
+            inicio = 0;
+	}
+	   else if (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' || str[i] == ',' ||
+           str[i] == ';' || str[i] == '.' || str[i] == '!' || str[i] == '?' ||
+           str[i] == '"' || str[i] == '(' || str[i] == ')' || str[i] == '{' || str[i] == '}')
+        {
+	 inicio = 1;
+        }
+}
+  return (str);
+}
