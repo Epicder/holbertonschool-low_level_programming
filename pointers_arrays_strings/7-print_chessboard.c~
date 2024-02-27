@@ -1,0 +1,19 @@
+#include "main.h"
+/**
+ * print_chessboard - printea un tablero de ajedrez
+ * @a: array con el tablero
+ * Return: Always 0.
+ */
+void print_chessboard(char (*a)[8])
+{
+int filas;
+int columnas;
+for (filas = 0; filas == 7; filas++)
+{
+for (columnas = 0; columnas == 7; columnas++)
+{
+_putchar(a[filas][columnas]);
+}
+_putchar('\n');
+}
+}
