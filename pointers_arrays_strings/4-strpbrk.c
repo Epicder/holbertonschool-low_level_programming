@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * strpbrk - Write a function that searches a string for any of a set of bytes.
+ * _strpbrk - Write a function that searches a string for any of a set of bytes.
  * @s: string
  * @accept: string
  * Return: retorna un puntero a s si coiniciden los bytes con accept, sino NULL
