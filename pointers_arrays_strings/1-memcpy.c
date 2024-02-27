@@ -5,7 +5,7 @@
  * @src: fuente
  * @dest: destinatario
  * @n: numero de bytes a copiar
- * return: el puntero ocn la memoria guardada
+ * Return: el puntero con la memoria guardada
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
