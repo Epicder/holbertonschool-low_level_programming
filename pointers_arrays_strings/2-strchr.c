@@ -3,7 +3,7 @@
  * _strchr - encuentra un caracter en una string
  * @s: string a ser analizada
  * @c: caracter a ser buscado
- * Return: string si encuentra el caracter, NULL si no
+ * Return: depende si encuentra el caracter o no
  */
 char *_strchr(char *s, char c)
 {
