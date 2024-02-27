@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * simple_print_buffer - prints buffer in hexa
+ * memcpy - copia memoria
  * @src: fuente
  * @dest: destinatario
  * @n: numero de bytes a copiar
