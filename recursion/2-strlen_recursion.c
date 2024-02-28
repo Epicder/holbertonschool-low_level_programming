@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - check the code
+ * _strlen_recursion - check the code
  * @s: string a ser analizada
  * Return: Always 0.
  */
