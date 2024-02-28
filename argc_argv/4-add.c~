@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(int argc, char *argv[])
+{
+  int i;
+  int suma;
+    if (argc == 1)
+    {
+      printf("0\n");
+    }
+  	  for (i = 1; i < argc; i++)
+	    {
+          suma += atoi(argv[i]);
+	    }
+    
+       printf("%d\n", suma);
+       
+	}
+      else
+	{
+	  printf("Error");
+	  return (1);
+	}
+    }
+
+  return (0);
+}  
