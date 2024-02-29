@@ -29,7 +29,7 @@ else
 suma += atoi(argv[a]);
 }
 }
-printf("%d", suma);
+printf("%d\n", suma);
 }
 return (0);
 }
