@@ -40,5 +40,6 @@ char *str_concat(char *s1, char *s2)
     {
       concatenado[a + i] = s2[i];
     }
+  concatenado[a + b] = '\0';
   return (concatenado); 
 }
