@@ -8,11 +8,8 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-  int a;
-  int b;
+  int a, b, c, i;
   char *concatenado;
-  int i;
-  int o;
   if (s1 == NULL)
     {
       s1 = "";
@@ -29,7 +26,8 @@ char *str_concat(char *s1, char *s2)
     {
       b++;
     }
-  concatenado = (char *)malloc(a + b + 1);
+  c = a + b;
+  concatenado = (char *)malloc((sizeof(char) * c) + 1);
     if (concatenado == NULL)
       {
 	return (NULL);
@@ -38,9 +36,9 @@ char *str_concat(char *s1, char *s2)
     {
       concatenado[i] = s1[i];
     }
-  for (o = 0; o < b; o++)
+  for (i = 0; i < b; i++)
     {
-      concatenado[a + b] = s2[i];
+      concatenado[a + i] = s2[i];
     }
   return (concatenado); 
 }
