@@ -1,0 +1,37 @@
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+/*
+ * alloc_grid - returna un puntero a una array 2d de enteros
+ * @width: anchura de la grid
+ * @height: altira de la grid
+ * Return: la grid o null
+ */
+int **alloc_grid(int width, int height)
+{
+int **grid;
+int i;
+int a;
+if (width <= 0)
+{
+return (NULL);
+}
+if (height <= 0)
+{
+return (NULL);
+}
+grid = (int **)malloc(sizeof(int *) * height);
+if (grid == NULL)
+{
+return (NULL);
+}
+for (i = 0; i < height; i++)
+{
+grid[i] = (int *)malloc(width * sizeof(int));
+for (a = 0; a < width ; a++)
+{
+grid[i][a] = 0;
+}
+}
+return (grid);
+}
