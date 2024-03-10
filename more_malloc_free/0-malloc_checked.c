@@ -6,7 +6,7 @@
  * @b: variable para malloc
  * Return: puntero
  */
-void *malloc_checked(unsigned int b);
+void *malloc_checked(unsigned int b)
 {
 void *puntero = malloc(b);
 if (puntero == NULL)
