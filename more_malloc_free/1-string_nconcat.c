@@ -1,0 +1,44 @@
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+/**
+ * string_nconcat - concatena 2 strings
+ * @s1: primera string
+ * @s2: segunda sting
+ * @n: numero de bytes de la segunda string
+ * Return: puntero al espacio del concatenado o null
+ */
+char *string_nconcat(char *s1, char *s2, unsigned int n)
+{
+unsigned int a;
+int i = 0;
+char *mall;
+if (s1 == NULL)
+{
+s1 = "";
+}
+if (s2 == NULL)
+{
+s2 = "";
+}
+while (s1[i] != '\0')
+{
+i++;
+}
+mall = malloc(sizeof(char) * (i + 1));
+if (mall == NULL)
+{
+return (NULL);
+}
+i = 0;
+for (a = 0; s1[a] != '\0'; a++)
+{
+mall[a] = s1[a];
+}
+i = a;
+for (a = 0; a < n && s2[a] != '\0'; a++)
+{
+mall[i + a] = s2[a];
+}
+return (mall);
+}
