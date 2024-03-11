@@ -1,0 +1,32 @@
+#include "dog.h"
+#include <stdio.h>
+/**
+ * print_dog - printea la structura dog
+ * @d: estructura
+ *
+ */
+void print_dog(struct dog *d)
+{
+  if (d == NULL)
+    {
+      
+    }
+  if (d->name == NULL)
+    {
+  printf("Name: (nil)\n");
+  printf("Age: %.1f\n", d->age);
+  printf("Owner: %s\n", d->name);
+    }
+  else if (d->owner == NULL)
+    {
+printf("Name: %s\n", d->name);
+  printf("Age: %.1f\n", d->age);
+  printf("Owner: (nil)");
+    }
+  else
+    {
+  printf("Name: %s\n", d->name);
+  printf("Age: %.1f\n", d->age);
+  printf("Owner: %s\n", d->name);
+    }
+}
