@@ -23,6 +23,12 @@ printf("Name: %s\n", d->name);
   printf("Age: %f\n", d->age);
   printf("Owner: (nil)");
     }
+  else if (d->owner == NULL && d->name == NULL)
+    {
+printf("Name: (nil)\n");
+  printf("Age: %f\n", d->age);
+  printf("Owner: (nil)");
+    }
   else
     {
   printf("Name: %s\n", d->name);
