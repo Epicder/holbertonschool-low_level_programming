@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * array_range - crea un array de strings 
+ * array_range - crea un array de strings
  * @min: minimo
  * @max: maximo
  * Return: puntero al array
@@ -17,14 +17,14 @@ if (min > max)
 return (NULL);
 }
 size = max - min + 1;
-array = malloc(size * sizeof(int));
+array = malloc(size *sizeof(int));
 if (array == NULL)
 {
 return (NULL);
 }
 for (i = 0; i < size; i++)
 {
-array[i] = min + i; 
+array[i] = min + i;
 }
 return (array);
 }
