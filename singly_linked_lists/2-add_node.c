@@ -14,17 +14,13 @@ if (!head)
 {
 return (NULL);
 }
-nodo = (list_t *)malloc(sizeof(list_t));
+nodo = malloc(sizeof(list_t));
 if (!nodo)
 {
 return (NULL);
 }
 nodo->str = strdup(str);
-if (!nodo->str)
-{
-free(nodo);
-return (NULL);
-}
+nodo->len = strlen(str);
 nodo->next = *head;
 *head = nodo;
 return (nodo);
