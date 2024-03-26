@@ -1,0 +1,56 @@
+#include "lists.h"
+#include <string.h>
+#include <stdlib.h>
+#include <stdio.h>
+int _strlen(const char *str);
+/**
+ * add_node_end - aniade un node al final
+ * @head: primer nodo
+ * @str: string
+ * Return: Return: the address of the new element, or NULL if it failed
+ */
+list_t *add_node_end(list_t **head, const char *str)
+{
+list_t *nodof, *tmp;
+if (!head || !str)
+{
+return (NULL);
+}
+nodof = malloc(sizeof(list_t));
+if (!nodof)
+{
+return (NULL);
+}
+nodof->str = strdup(str);
+nodof->len = _strlen(str);
+nodof->next = NULL;
+if (!*head)
+{
+*head = nodof;
+}
+else
+{
+tmp = *head;
+while (tmp->next)
+{
+tmp = tmp->next;
+tmp->next = nodof;
+return (tmp);
+}
+}
+return (NULL);
+}
+/**
+ * _strlen - guarda la longitud de una string
+ * @str: string
+ * Return: len
+ */
+int _strlen(const char *str)
+{
+int len = 0;
+while (str[len] != '\0')
+{
+len++;
+}
+return (len);
+}
