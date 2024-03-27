@@ -31,15 +31,15 @@ if (!*head)
 else
 {
 tmp = *head;
-while (tmp->next)
+while (tmp->next != NULL)
 {
 tmp = tmp->next;
+}
 tmp->next = nodof;
-return (tmp);
 }
+return (nodof);
 }
-return (NULL);
-}
+
 /**
  * _strlen - guarda la longitud de una string
  * @str: string
