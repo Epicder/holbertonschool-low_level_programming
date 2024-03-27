@@ -20,7 +20,17 @@ if (!node)
 return (NULL);
 }
 node->n = n;
-node->next = *head;
+node->prev = NULL;
+if (!*head)
+{
+node->next = NULL;
 *head = node;
+}
+else
+{
+node->next = *head;
+(*head)->prev = node;
+*head = node;
+}
 return (node);
 }
