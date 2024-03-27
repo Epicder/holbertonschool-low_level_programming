@@ -4,7 +4,7 @@
 /**
  * add_dnodeint - aniade un nuevo nodo
  * @head: el primer nodo
- * @: el value del nodo
+ * @n: el value del nodo
  * Return: nodo
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
