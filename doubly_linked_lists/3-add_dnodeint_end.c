@@ -1,0 +1,39 @@
+#include "lists.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+/**
+ * add_dnodeint_end - aniade un nodo al final de la lista
+ * @head: puntero al puntero del nodo head
+ * @n: valor del nodo
+ * Return: Nodef
+ */
+dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
+{
+dlistint_t *nodef, *temp;
+if (!head)
+{
+return (NULL);
+}
+nodef = malloc(sizeof(dlistint_t));
+if (!nodef)
+{
+return (NULL);
+}
+nodef->n = n;
+nodef->next = NULL;
+if (!*head)
+{
+nodef->prev = NULL;
+*head = nodef;
+return (nodef);
+}
+temp = *head;
+while (temp->next)
+{
+temp = temp->next;
+}
+temp->next = nodef;
+nodef->prev = temp;
+return (nodef);
+}
