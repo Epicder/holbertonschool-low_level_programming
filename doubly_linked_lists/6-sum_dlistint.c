@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * sumn_dlistint - suma todos los value de cada nodo
+ * sum_dlistint - suma todos los value de cada nodo
  * @head: nodo head
  * Return: suma
  */
