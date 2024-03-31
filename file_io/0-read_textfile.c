@@ -32,5 +32,6 @@ return (0);
 }
 rd = read(opn, tmp, letters);
 write(STDOUT_FILENO, tmp, rd);
+close(opn);
 return (rd);
 }
